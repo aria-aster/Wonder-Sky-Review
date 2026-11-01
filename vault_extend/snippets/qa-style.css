@@ -29,6 +29,16 @@
     margin: 0;
 }
 
+/* search-compact を指定した場合だけ行データを隠す */
+.callout[data-callout="search-compact"] .search-result-file-matches {
+    display: none;
+}
+
+/* 検索アイコンを指定 */
+.callout[data-callout="search-compact"] {
+    --callout-icon: lucide-search;
+}
+
 /* 高さ制限と内部スクロールを解除 */
 .markdown-preview-view .markdown-embed-content {
     max-height: none;
